@@ -1,0 +1,27 @@
+ C++ program proving that to approximate e 10.5 using Taylor series with an error less than 10-12:
+ a) We will need at least 17 terms around a=0
+#include <iostream>
+#include <cmath>
+using namespace std;
+int fact (int x)
+{
+
+  if (x > 1)
+   return (x * fact (x-1));
+  else
+
+   return (1);
+}
+int main()
+{
+    long double e=exp(10.5), Rn, x;
+    int n=0;
+   do
+    {n++;
+    Rn= (e * pow(10.5, n+1))/fact(n+1);
+    
+    } while( Rn > pow(10,-12));
+    cout<<n<<endl<<Rn;
+}
+
+
