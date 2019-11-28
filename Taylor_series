@@ -24,6 +24,6 @@ int main()
     
     } while( Rn > pow(10,-12));
     cout<<n<<endl<<Rn;
-}
+
 
 
