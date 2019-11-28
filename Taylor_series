@@ -18,7 +18,8 @@ int main()
     long double e=exp(10.5), Rn, x;
     int n=0;
    do
-    {n++;
+    {
+    n++;
     Rn= (e * pow(10.5, n+1))/fact(n+1);
     
     } while( Rn > pow(10,-12));
