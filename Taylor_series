@@ -22,7 +22,8 @@ int main()
     n++;
     Rn= (e * pow(10.5, n+1))/fact(n+1);
     
-    } while( Rn > pow(10,-12));
+    }
+    while( Rn > pow(10,-12));
     cout<<n<<endl<<Rn;
 }
 
